@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+}
+
+.pepper img {
+    float: left;
+    shape-outside: ellipse();
+}
+
+.peas img {
+    shape-outside: ellipse(); 
+}
+
+.eggplant img {
+    float: left;
+    shape-outside: ellipse(); 
+}
