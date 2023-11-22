@@ -4,11 +4,6 @@
     padding: 0;
 }
 
-
-body {
-  background-color: rgba(0, 0, 0, .8);
-}
-
 .container {
     width: 60%;
     margin: auto;
@@ -18,10 +13,20 @@ body {
     justify-content: center;
 }
 
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
 .slider {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     height: 100vh;
-    width: 100vw;
+    width: 100vh;
     position: relative;
     overflow: hidden;
     margin-top: 50PX;
@@ -35,7 +40,7 @@ body {
     background-size: cover;
     position: absolute;
     transition: 0.4s ease;
-    z-index: 1;
+    z-index: 10001;
   }
   
   .slide.active {
@@ -51,7 +56,7 @@ body {
     top: 50%;
     left: 22%;
     cursor: pointer;
-    z-index: 10;
+    z-index: 10001;
 }
 
 .nextBtn {
@@ -63,7 +68,7 @@ body {
     top: 50%;
     right: 22%;
     cursor: pointer;
-    z-index: 10;
+    z-index: 10001;
 }
 
 li {
@@ -156,9 +161,26 @@ position: relative;
   cursor: pointer;
   top: 0;
   left: 0;
-  z-index: 300;
 }
 
 .logo i {
   margin-right: 10px;
+}
+
+/* Mobile */ 
+@media(max-width: 500px)  {
+  .slide {
+      width: 100%;
+      height: 350px;
+      margin-top: 20px;
+  }
+
+ .prevBtn i {
+    transform: translate(-40px,-70px);
+  }
+
+ .nextBtn i {
+    transform: translate(40px,-70px);
+ }
+
 }

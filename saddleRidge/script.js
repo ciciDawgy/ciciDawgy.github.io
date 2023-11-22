@@ -33,14 +33,11 @@ function checkSections() {
 }
 
 
-
 /*automatic slider for homepage*/
-
-
 
 var i = 0;
 var images = [];
-var time = 12000;
+var time = 6000;
 
 images[0] = "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80";
 images[1] = "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80";
@@ -49,29 +46,6 @@ images[3] = "https://images.unsplash.com/photo-1623920996377-9c5cd536143e?ixlib=
 images[4] =  "https://images.unsplash.com/photo-1596204976717-1a9ff47f74ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80";
 images[5] =  "https://images.unsplash.com/photo-1433849665221-d2f93042ae54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80";
 
-/*
-var imgArray = [
-    'https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-    'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-    'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=968&q=80',
-     'https://images.unsplash.com/photo-1623920996377-9c5cd536143e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80',
-     'https://images.unsplash.com/photo-1596204976717-1a9ff47f74ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-     'https://images.unsplash.com/photo-1433849665221-d2f93042ae54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80'],
-    curIndex = 0;
-    imgDuration = 11000;
-
-function slideShow() {
-    document.getElementById('slider').className += "fadeOut";
-    setTimeout(function() {
-        document.getElementById('slider').src = imgArray[curIndex];
-        document.getElementById('slider').className = "";
-    }, );
-    curIndex++;
-    if (curIndex == imgArray.length) { curIndex = 0; }
-    setTimeout(slideShow, imgDuration);
-}
-slideShow();
-*/
 
 function changeImage() {
     document.slide.src = images[i]
