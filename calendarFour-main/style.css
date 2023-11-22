@@ -21,7 +21,8 @@ body {
 }
 
 #monthDisplay {
-  margin-left: 100px;
+  margin-left: 120px;
+  padding: 10px;
 }
 
 #header {
@@ -41,22 +42,21 @@ body {
  border: none;
  background-color: transparent;
  color: #fff;
- font-size: larger;
- bottom: 20px;
+ font-size: 25px;
  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.8);
 } 
 
 
 #left {
   position: absolute;
-  left: 30px;
-  top: 15px;
+  left: 20px;
+  top: 25px;
 }
 
 #right {
   position: absolute;
-  right: 40px;
-  top: 10px;
+  right: 30px;
+  top: 25px;
 }
 
 #container {
