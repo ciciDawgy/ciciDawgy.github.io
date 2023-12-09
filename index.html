@@ -1,53 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portfolio</title>
-</head>
-<body>
-    <ul>
-        <li><a href="index.html" class="nav__link">Home</a></li>
-        <li><a href="projects.html" class="nav__link"><span>Projects</span></a></li>
-        <li><a href="contact.html" class="nav__link">Contact</a></li>
-    </ul>
-    <section class="Intro">
-        <div class="names">
-           <ul class="name">
-             <li>C</li>
-             <li>y</li>
-             <li>n</li>
-             <li>t</li>
-             <li>h</li>
-             <li>i</li>
-             <li>a</li>
-           </ul>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calendar App Vanilla JS</title>
+  </head>
+  <body>
+    
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay">
+       </div>
+        <div>
+          <button id="backButton"><i class="fas fa-angle-left prev" id="left"></i></button>
+          <button id="nextButton"><i class="fas fa-angle-right next" id="right"></i></button>
         </div>
-        <div class="names">
-            <ul class="nameTwo">
-                <li>C</li>
-                <li>a</li>
-                <li>r</li>
-                <li>p</li>
-                <li>e</li>
-                <li>n</li>
-                <li class="tea">t</li>
-                <li>e</li>
-                <li>r</li>
-            </ul>
-        </div>
-        <!--<img src="https://www.pngitem.com/pimgs/m/50-503554_business-girl-png-business-woman-images-png-transparent.png">-->
-        <img src="https://prod.wp.cdn.aws.wfu.edu/sites/298/2021/07/Karen-Horton-Memoji.png" class="memoji">
-        <p> Hi, I'm Cindy! I love programming and I love the Church of Jesus Christ of Latter-Day Saints.  It would be an
-            honour to work for the church.  Thank you for your consideration.  
-        </p>
-        <a href="projects.html" class="btn">Jump To Projects</a>
-    </section>
+      </div>
 
+      <div id="weekdays">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
 
+      <div id="calendar"></div>
 
-    <script src="script.js"></script>
-</body>
+          <div class="slider-container">
+      
+         
+      
+        <div
+          class="slide"
+          style="
+            background-image: url('https://cdn.pixabay.com/photo/2014/04/10/11/35/red-320891_1280.jpg');
+          "
+        ></div>
+         
+      
+        <div
+          class="slide"
+          style="
+            background-image: url('https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729513_1280.jpg');
+          "
+        ></div>
+  
+        
+        <div
+          class="slide"
+          style="
+            background-image: url('https://cdn.pixabay.com/photo/2018/06/07/20/54/rose-3460971_1280.jpg');
+          "
+         ></div>
+
+        
+        <div
+        class="slide"
+        style="
+          background-image: url('https://cdn.pixabay.com/photo/2015/04/10/00/41/yellow-715540_1280.jpg');
+        "
+      ></div>
+
+      
+      <div
+        class="slide"
+        style="
+          background-image: url('https://cdn.pixabay.com/photo/2017/11/26/22/38/rose-2980163_1280.jpg');
+        "
+      ></div>
+
+     
+      <div
+        class="slide"
+        style="
+          background-image: url('https://cdn.pixabay.com/photo/2019/05/14/16/43/flower-4202825_1280.jpg');
+        "
+      ></div>
+
+      
+      <div
+        class="slide"
+        style="
+          background-image: url('https://cdn.pixabay.com/photo/2020/06/06/14/26/flower-5266745_1280.jpg');
+        "
+      ></div>
+
+      
+      <div
+        class="slide"
+        style="
+          background-image: url('https://cdn.pixabay.com/photo/2016/05/16/21/34/cosmea-1396842_1280.jpg');
+        "
+      ></div>
+
+      
+      <div
+        class="slide"
+        style="
+          background-image: url('https://cdn.pixabay.com/photo/2021/04/08/18/59/yellow-rose-6162613_1280.jpg');
+        "
+      ></div>
+
+      
+      <div
+        class="slide"
+        style="
+          background-image: url('https://cdn.pixabay.com/photo/2022/07/21/13/24/clematis-7336249_1280.jpg');
+        "
+      ></div>
+        
+        <div
+          class="slide"
+          style="
+            background-image: url('https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729514_1280.jpg');
+          "
+        ></div>
+         
+         <div
+         class="slide active"
+         style="
+           background-image: url('https://cdn.pixabay.com/photo/2017/05/22/13/36/water-lily-2334209_1280.jpg');
+         "
+       ></div> 
+        
+    </div> 
+    </div> 
+
+    <div id="newEventModal">
+      <h2>New Event</h2>
+
+      <input id="eventTitleInput" placeholder="Event Title" />
+
+      <button id="saveButton">Save</button>
+      <button id="cancelButton">Cancel</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Event</h2>
+
+      <p id="eventText"></p>
+
+      <button id="deleteButton">Delete</button>
+      <button id="closeButton">Close</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
