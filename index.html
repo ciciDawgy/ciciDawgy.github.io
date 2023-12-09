@@ -1,156 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <title>Calendar App Vanilla JS</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Space</title>
+</head>
+<body>
+
     
-    <div id="container">
-      <div id="header">
-        <div id="monthDisplay">
-       </div>
-        <div>
-          <button id="backButton"><i class="fas fa-angle-left prev" id="left"></i></button>
-          <button id="nextButton"><i class="fas fa-angle-right next" id="right"></i></button>
+        <div class="starWars">
+           <div class="container"> 
+             <div class="credits">                  
+              <p>Our solar system consists of our star, the Sun, and everything bound to it by gravity the planets Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune; dwarf planets such as Pluto; dozens of moons; and millions of asteroids, comets, and meteoroids. Beyond our own solar system, we have discovered thousands of planetary systems orbiting other stars in the Milky Way. Our planetary system is located in an outer spiral arm of the Milky Way galaxy.
+                The Solar System is the gravitationally bound system of the Sun and the objects that orbit it. It formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud.
+                The vast majority 99.86% of the system's mass is in the Sun, with most of the remaining mass contained in the planet Jupiter. The four inner system planets—Mercury, Venus, Earth and Mars—are terrestrial planets, being composed primarily of rock and metal. The four giant planets of the outer system are substantially larger and more massive than the terrestrials. The two largest, Jupiter and Saturn, are gas giants, being composed mainly of hydrogen and helium; the next two, Uranus and Neptune, are ice giants, being composed mostly of volatile substances with relatively high melting points compared with hydrogen and helium, such as water, ammonia, and methane. All eight planets have nearly circular orbits that lie near the plane of Earth's orbit, called the ecliptic.
+                There are an unknown number of smaller dwarf planets and innumerable small Solar System bodies orbiting the Sun. Six of the major planets, the six largest possible dwarf planets, and many of the smaller bodies are orbited by natural satellites, commonly called "moons" after Earth's Moon.
+              </p>
+           </div>
         </div>
-      </div>
-
-      <div id="weekdays">
-        <div>Sun</div>
-        <div>Mon</div>
-        <div>Tue</div>
-        <div>Wed</div>
-        <div>Thu</div>
-        <div>Fri</div>
-        <div>Sat</div>
-      </div>
-
-      <div id="calendar"></div>
-
-          <div class="slider-container">
+        </div>
+    
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Cartoon_space_rocket.png/939px-Cartoon_space_rocket.png" class="rocket">
       
-         
-      
-        <div
-          class="slide"
-          style="
-            background-image: url('https://cdn.pixabay.com/photo/2014/04/10/11/35/red-320891_1280.jpg');
-          "
-        ></div>
-         
-      
-        <div
-          class="slide"
-          style="
-            background-image: url('https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729513_1280.jpg');
-          "
-        ></div>
+        <!--Shooting stars-->
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+          
   
+      
+    
+        <div class="orbitContainer">
+   
         
-        <div
-          class="slide"
-          style="
-            background-image: url('https://cdn.pixabay.com/photo/2018/06/07/20/54/rose-3460971_1280.jpg');
-          "
-         ></div>
+             <div class="sun planet"></div>
+                  
+                  <div class="orbit orbit8">
+                        <div class="neptune planet"></div>                        
+                    </div>
 
+                    <div class="orbit orbit7">
+                         <div class="uranus planet"></div>
+                     </div>
+
+                    <div class="orbit orbit6">
+                        <div class="saturn planet"></div>
+                    </div>
+
+                    <div class="orbit orbit5">
+                        <div class="jupitor planet"></div>
+                      </div>
+            
+
+                       <div class="orbit orbit4">
+                           <div class="mars planet"></div>
+                         </div>
+
+                       <div class="orbit orbit3">
+                          <div class="earth planet">
+                            <p>Earth is the third planet</p>
+                          </div>
+                        </div>  
+            
+
+                       <div class="orbit orbit2">
+                          <div class="venus planet">
+                             <p>Venus is the first planet</p>
+                          </div>
+                        </div>
+            
+
+                      <div class="orbit orbit1">
+                            <div class="mercury planet">
+                              <p>Mercury is the second planet</p>
+                            </div>
+                      </div>      
+                      
+    
+              </div>
+            
+              <div class="modal">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa obcaecati quidem itaque eum accusamus necessitatibus aliquid minima fugit! Mollitia.</p>
+                <i class="fa-solid fa-x"></i>
+              </div>
         
-        <div
-        class="slide"
-        style="
-          background-image: url('https://cdn.pixabay.com/photo/2015/04/10/00/41/yellow-715540_1280.jpg');
-        "
-      ></div>
-
-      
-      <div
-        class="slide"
-        style="
-          background-image: url('https://cdn.pixabay.com/photo/2017/11/26/22/38/rose-2980163_1280.jpg');
-        "
-      ></div>
-
-     
-      <div
-        class="slide"
-        style="
-          background-image: url('https://cdn.pixabay.com/photo/2019/05/14/16/43/flower-4202825_1280.jpg');
-        "
-      ></div>
-
-      
-      <div
-        class="slide"
-        style="
-          background-image: url('https://cdn.pixabay.com/photo/2020/06/06/14/26/flower-5266745_1280.jpg');
-        "
-      ></div>
-
-      
-      <div
-        class="slide"
-        style="
-          background-image: url('https://cdn.pixabay.com/photo/2016/05/16/21/34/cosmea-1396842_1280.jpg');
-        "
-      ></div>
-
-      
-      <div
-        class="slide"
-        style="
-          background-image: url('https://cdn.pixabay.com/photo/2021/04/08/18/59/yellow-rose-6162613_1280.jpg');
-        "
-      ></div>
-
-      
-      <div
-        class="slide"
-        style="
-          background-image: url('https://cdn.pixabay.com/photo/2022/07/21/13/24/clematis-7336249_1280.jpg');
-        "
-      ></div>
         
-        <div
-          class="slide"
-          style="
-            background-image: url('https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729514_1280.jpg');
-          "
-        ></div>
-         
-         <div
-         class="slide active"
-         style="
-           background-image: url('https://cdn.pixabay.com/photo/2017/05/22/13/36/water-lily-2334209_1280.jpg');
-         "
-       ></div> 
-        
-    </div> 
-    </div> 
-
-    <div id="newEventModal">
-      <h2>New Event</h2>
-
-      <input id="eventTitleInput" placeholder="Event Title" />
-
-      <button id="saveButton">Save</button>
-      <button id="cancelButton">Cancel</button>
-    </div>
-
-    <div id="deleteEventModal">
-      <h2>Event</h2>
-
-      <p id="eventText"></p>
-
-      <button id="deleteButton">Delete</button>
-      <button id="closeButton">Close</button>
-    </div>
-
-    <div id="modalBackDrop"></div>
-
-    <script src="./script.js"></script>
+       <script src="script.js"></script>
   </body>
 </html>
